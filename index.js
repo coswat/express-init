@@ -4,7 +4,6 @@ const { Liquid } = require("liquidjs");
 
 let engine = new Liquid();
 app.engine("liquid", engine.express());
-app.set("views", "./views");
 app.set("view engine", "liquid");
 
 app.get("/", (req, res) => {
